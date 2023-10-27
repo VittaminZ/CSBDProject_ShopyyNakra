@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>AddToShoppingCart</servlet-name>
+        <servlet-class>controller.AddToShoppingCart</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CallProductTable</servlet-name>
+        <servlet-class>controller.CallProductTable</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ShowConfirmation_Controller</servlet-name>
+        <servlet-class>controller.ShowConfirmation_Controller</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddToShoppingCart</servlet-name>
+        <url-pattern>/AddToShoppingCart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowConfirmation_Controller</servlet-name>
+        <url-pattern>/ShowConfirmation_Controller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CallProductTable</servlet-name>
+        <url-pattern>/CallProductTable</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
